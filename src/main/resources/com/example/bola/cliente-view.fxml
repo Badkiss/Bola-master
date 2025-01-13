@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bola.ClienteController">
+   <children>
+
+      <TextField fx:id="textIP" promptText="IP" />
+      <TextField fx:id="textPuerto" layoutX="200.0" promptText="Puerto" />
+      <Button fx:id="start" alignment="CENTER" layoutX="400.0" mnemonicParsing="false" onAction="#onStart" text="Start" />
+      <ImageView fx:id="imagenB" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@ball.png" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>
