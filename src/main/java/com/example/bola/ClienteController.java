@@ -8,16 +8,18 @@ import javafx.scene.image.ImageView;
 
 public class ClienteController {
     @FXML
-    Button start;
+  private   Button start;
     @FXML
-    ImageView imagenB;
+  private   ImageView imagenB;
     @FXML
-    TextField textIP;
+  private   TextField textIP;
     @FXML
-    TextField textPuerto;
-    Cli cliente;
+  private   TextField textPuerto;
+  private   Cli cliente;
     @FXML
    void onStart(){
-        cliente = new Cli(textIP.getText(),textPuerto.getText());
+        cliente = new Cli(textIP.getText(),textPuerto.getText(),imagenB);
+        Thread hiloCliente=new Thread(cliente);
+        hiloCliente.start();
    }
 }
